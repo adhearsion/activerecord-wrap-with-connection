@@ -5,11 +5,11 @@ require "activerecord-wrap-with-connection/version"
 Gem::Specification.new do |s|
   s.name        = "activerecord-wrap-with-connection"
   s.version     = ActiverecordWrapWithConnection::VERSION
-  s.authors     = ["FIXME (author's name)"]
-  s.email       = ["FIXME (author's email)"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Ben Langfeld"]
+  s.email       = ["ben@langfeld.me"]
+  s.homepage    = "https://github.com/adhearsion/activerecord-wrap-with-connection"
+  s.summary     = %q{Using ActiveRecord in long running threads is painful. Here's a nice solution.}
+  s.description = %q{Monkey-patches ActiveRecord to wrap all methods which use a database connection with #with_connection}
 
   s.rubyforge_project = "activerecord-wrap-with-connection"
 

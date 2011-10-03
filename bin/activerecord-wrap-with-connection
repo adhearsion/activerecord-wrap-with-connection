@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'activerecord-wrap-with-connection'
-
-# Put your code here

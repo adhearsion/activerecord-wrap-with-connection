@@ -1,46 +1,33 @@
 activerecord-wrap-with-connection
 ===========
 
-FIXME (describe your package)
-
-Features
---------
-
-* FIXME (list of features and unsolved problems)
+ActiveRecord is intended for short-lived threads. In order to use it in other situations, connections must be carefully checked back in to the pool in order for it not to be saturated. This gem monkey-patches ActiveRecord to wrap all model methods which touch a connection in [#with_connection](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html#method-i-with_connection)
 
 Requirements
 ------------
 
-* FIXME (list of requirements)
+* Rails 3.0.0+
 
 Install
 -------
 
-    gem install activerecord-wrap-with-connection FIXME (gem install, anything else)
-
-Examples
---------
-
-```ruby
-  require 'activerecord-wrap-with-connection'
-  FIXME (code sample of usage)
-```
+* `gem install activerecord-wrap-with-connection`
+* `require 'activerecord-wrap-with-connection` after requiring ActiveRecord
 
 Author
 ------
 
-Original author: FIXME (author's name)
+Original author: Ben Langfeld
 
 Contributors:
 
-* FIXME (contributor 1?)
-* FIXME (contributor 2?)
+* [Steve](http://coderrr.wordpress.com/) - The original version of this patch, for Rails 2.3
 
 Links
 -----
-* [Source](https://github.com/activerecord-wrap-with-connection/activerecord-wrap-with-connection)
-* [Documentation](http://rdoc.info/github/activerecord-wrap-with-connection/activerecord-wrap-with-connection/master/frames)
-* [Bug Tracker](https://github.com/activerecord-wrap-with-connection/activerecord-wrap-with-connection/issues)
+* [Source](https://github.com/adhearsion/activerecord-wrap-with-connection)
+* [Documentation](http://rdoc.info/github/adhearsion/activerecord-wrap-with-connection/master/frames)
+* [Bug Tracker](https://github.com/adhearsion/activerecord-wrap-with-connection/issues)
 
 Note on Patches/Pull Requests
 -----------------------------
@@ -55,4 +42,4 @@ Note on Patches/Pull Requests
 Copyright
 ---------
 
-Copyright (c) 2011 FIXME (author's name). MIT licence (see LICENSE for details). FIXME (different license?)
+Copyright (c) 2011 Ben Langfeld. MIT licence (see LICENSE for details)
