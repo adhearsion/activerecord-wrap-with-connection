@@ -10,7 +10,7 @@ require "activerecord-wrap-with-connection/version"
   ActiveRecord::Associations::HasManyThroughAssociation => [:construct_conditions],
   ActiveRecord::Associations::HasOneAssociation => [:construct_sql],
   ActiveRecord::Associations::ClassMethods => [:collection_reader_method, :configure_dependency_for_has_many],
-  ActiveRecord::Calculations::ClassMethods => [:calculate]
+  ActiveRecord::Calculations => [:calculate]
 }.each do |klass, methods|
   methods.each do |method|
     klass.class_eval do
