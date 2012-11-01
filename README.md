@@ -12,7 +12,7 @@ Install
 -------
 
 * `gem install activerecord-wrap-with-connection`
-* `require 'activerecord-wrap-with-connection` after requiring ActiveRecord
+* `require 'activerecord-wrap-with-connection'` after requiring ActiveRecord
 
 Author
 ------
